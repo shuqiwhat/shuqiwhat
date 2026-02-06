@@ -1,17 +1,18 @@
 name: generate animation
 
 on:
+  # TEMPORARILY DISABLED: Waiting for Student Pack benefits to activate (72 hours from Feb 6, 2026)
   # Run automatically every 24 hours
-  schedule:
-    - cron: "0 0 * * *" 
+  # schedule:
+  #   - cron: "0 0 * * *" 
   
   # Allows to manually run the job at any time
   workflow_dispatch:
   
   # Run on every push to the main branch
-  push:
-    branches:
-    - main
+  # push:
+  #   branches:
+  #   - main
 
 jobs:
   generate:
